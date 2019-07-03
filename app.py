@@ -31,12 +31,10 @@ def success():
                     'date_added': i.date_added
                 }
         results.append(result)
-    
+    # num_rows_deleted = db_session.query(Items).delete()
+    # db_session.commit()
     return jsonify({"results" : results})
     
-    
-    # results = qry.all()
-    # return str(results)
   
 
 if __name__ == '__main__':
